@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		188611632426065400398D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188611622426065400398D49 /* AppDelegate.swift */; };
 		188611652426065400398D49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188611642426065400398D49 /* SceneDelegate.swift */; };
-		188611672426065400398D49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188611662426065400398D49 /* ViewController.swift */; };
+		188611672426065400398D49 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188611662426065400398D49 /* MainViewController.swift */; };
 		1886116A2426065400398D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188611682426065400398D49 /* Main.storyboard */; };
 		1886116C2426065700398D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1886116B2426065700398D49 /* Assets.xcassets */; };
 		1886116F2426065700398D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886116D2426065700398D49 /* LaunchScreen.storyboard */; };
+		188611772426083900398D49 /* MoneyCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188611762426083900398D49 /* MoneyCourseTableViewCell.swift */; };
+		18861179242608B400398D49 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18861178242608B400398D49 /* NetworkManager.swift */; };
+		1886117B2426090100398D49 /* MoneyCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886117A2426090100398D49 /* MoneyCourse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1886115F2426065400398D49 /* home19_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home19_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188611622426065400398D49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		188611642426065400398D49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		188611662426065400398D49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		188611662426065400398D49 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		188611692426065400398D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1886116B2426065700398D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1886116E2426065700398D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		188611702426065700398D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188611762426083900398D49 /* MoneyCourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyCourseTableViewCell.swift; sourceTree = "<group>"; };
+		18861178242608B400398D49 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1886117A2426090100398D49 /* MoneyCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyCourse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				188611612426065400398D49 /* home19_2 */,
-				188611602426065400398D49 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +56,7 @@
 				1886115F2426065400398D49 /* home19_2.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		188611612426065400398D49 /* home19_2 */ = {
@@ -58,11 +64,15 @@
 			children = (
 				188611622426065400398D49 /* AppDelegate.swift */,
 				188611642426065400398D49 /* SceneDelegate.swift */,
-				188611662426065400398D49 /* ViewController.swift */,
+				188611762426083900398D49 /* MoneyCourseTableViewCell.swift */,
+				188611662426065400398D49 /* MainViewController.swift */,
+				18861178242608B400398D49 /* NetworkManager.swift */,
+				1886117A2426090100398D49 /* MoneyCourse.swift */,
 				188611682426065400398D49 /* Main.storyboard */,
 				1886116B2426065700398D49 /* Assets.xcassets */,
 				1886116D2426065700398D49 /* LaunchScreen.storyboard */,
 				188611702426065700398D49 /* Info.plist */,
+				188611602426065400398D49 /* Products */,
 			);
 			path = home19_2;
 			sourceTree = "<group>";
@@ -138,9 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				188611672426065400398D49 /* ViewController.swift in Sources */,
+				188611672426065400398D49 /* MainViewController.swift in Sources */,
+				1886117B2426090100398D49 /* MoneyCourse.swift in Sources */,
+				188611772426083900398D49 /* MoneyCourseTableViewCell.swift in Sources */,
 				188611632426065400398D49 /* AppDelegate.swift in Sources */,
 				188611652426065400398D49 /* SceneDelegate.swift in Sources */,
+				18861179242608B400398D49 /* NetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "David.home19-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "David.home19-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
