@@ -19,21 +19,26 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MoneyCourseTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="W4u-ok-bgb" customClass="MoneyCourseTableViewCell" customModule="home19_2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MoneyCourseTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoneyCourseTableViewCell" rowHeight="90" id="W4u-ok-bgb" customClass="MoneyCourseTableViewCell" customModule="home19_2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W4u-ok-bgb" id="aij-1F-y3l">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beh-TB-vqa">
-                                                    <rect key="frame" x="186" y="35" width="52" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="money" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beh-TB-vqa">
+                                                    <rect key="frame" x="30" y="21" width="354" height="48"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="beh-TB-vqa" firstAttribute="leading" secondItem="aij-1F-y3l" secondAttribute="leadingMargin" constant="10" id="Qyj-b8-EcY"/>
+                                                <constraint firstItem="beh-TB-vqa" firstAttribute="top" secondItem="aij-1F-y3l" secondAttribute="topMargin" constant="10" id="n3e-BA-Egj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="beh-TB-vqa" secondAttribute="bottom" constant="10" id="qAT-k3-Wtj"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="beh-TB-vqa" secondAttribute="trailing" constant="10" id="tAb-qQ-AsU"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="moneyCourseLable" destination="beh-TB-vqa" id="DYH-K2-5GB"/>

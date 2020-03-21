@@ -4,7 +4,7 @@ import Foundation
 class NetworkManager {
     static var shared = NetworkManager()
 
-    var money: Array<MoneyInfo> = []
+    var money: Array<MoneyInfo> = [MoneyInfo]()
     func loadCashRate(completed: @escaping () -> (Void)) {
         let urlString = "http://data.fixer.io/api/latest?access_key=3c8eb88e874d74e1553c306d2e07211a&base=EUR&symbols=USD,EUR,RUB,BYN"
         
