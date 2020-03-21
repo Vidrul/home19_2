@@ -4,9 +4,8 @@ import Foundation
 class NetworkManager {
     static var shared = NetworkManager()
 
-    var money: [MoneyInfo] = [MoneyInfo]()
-    
-    func loadCashRate(completed: @escaping () -> ()) {
+    var money: Array<MoneyInfo> = []
+    func loadCashRate(completed: @escaping () -> (Void)) {
         let urlString = "http://data.fixer.io/api/latest?access_key=3c8eb88e874d74e1553c306d2e07211a&base=EUR&symbols=USD,EUR,RUB,BYN"
         
         let url = URL(string: urlString)!
@@ -17,8 +16,9 @@ class NetworkManager {
                 error == nil,
                 let data = data else {return}
             do {
-                self.money = try JSONDecoder().decode([MoneyInfo].self, from: data)
+                let moneyJSON = try JSONDecoder().decode(MoneyInfo.self, from: data)
                 DispatchQueue.main.async {
+                    self.money = [moneyJSON]
                     completed()
                 }
             }

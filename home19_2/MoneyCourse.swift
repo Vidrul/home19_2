@@ -3,7 +3,6 @@ import Foundation
 
 
 
-
 struct MoneyInfo: Codable {
     let success: Bool
     let timestamp: Int
@@ -12,6 +11,7 @@ struct MoneyInfo: Codable {
 }
 
 struct Rates: Codable {
+    
     let usd: Double
     let eur: Double
     let rub: Double
